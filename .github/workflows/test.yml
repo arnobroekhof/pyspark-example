@@ -1,7 +1,7 @@
 # This workflow will install Python dependencies, run tests and lint with a variety of Python versions
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Python package
+name: PySpark Test
 
 on:
   push:
@@ -17,6 +17,15 @@ jobs:
       fail-fast: false
       matrix:
         python-version: ["3.7"]
+    env:
+      AWS_ACCESS_KEY_ID: minioadmin
+      AWS_SECRET_ACCESS_KEY: minioadmin
+    services:
+      minio:
+        image: fclairamb/minio-github-actions
+        ports:
+          - 9000:9000
+
 
     steps:
     - uses: actions/checkout@v3

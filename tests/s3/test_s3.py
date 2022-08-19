@@ -16,9 +16,9 @@ class TestS3(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls) -> None:
-        s3_endpoint = os.environ.get("S3_ENDPOINT", "http://localhost:9000")
-        s3_access_key = os.environ.get("S3_ACCESS_KEY", "minioadmin")
-        s3_secret_key = os.environ.get("S3_SECRET_KEY", "minioadmin")
+        s3_endpoint = os.environ.get("S3_ENDPOINT", "http://127.0.0.1:9000")
+        s3_access_key = os.environ.get("AWS_ACCESS_KEY_ID", "minioadmin")
+        s3_secret_key = os.environ.get("AWS_SECRET_ACCESS_KEY", "minioadmin")
 
         # create the s3 client
         cls.s3_client = boto3.client(
