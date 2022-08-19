@@ -9,10 +9,13 @@ This is an example boilerplate project for a PySpark Project setup
 
 including
 
+* S3 Setup with Minio
+* DeltaLake ( https://delta.io/ ) including dependencies setup
 * tests ( running in Github Actions and Local )
 * mypy
 * black
 * linting
+* unit test coverage reporting
 
 ## Documentation
 
