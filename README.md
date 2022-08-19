@@ -4,8 +4,12 @@
 *NOTE*: 
 This is an example boilerplate project for a PySpark Project setup
 
+including
 
-
+* tests
+* mypy
+* black
+* linting
 
 ## Documentation
 
