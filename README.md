@@ -1,12 +1,15 @@
 
 # PySpark example
 
+![Test Build](https://github.com/arnobroekhof/pyspark-example/actions/workflows/test.yml/badge.svg)
+
+
 *NOTE*: 
 This is an example boilerplate project for a PySpark Project setup
 
 including
 
-* tests
+* tests ( running in Github Actions and Local )
 * mypy
 * black
 * linting
