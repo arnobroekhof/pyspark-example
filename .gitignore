@@ -1,0 +1,16 @@
+**.egg-info**
+**build**
+**dist**
+.vscode
+venv
+.venv
+.DS_Store
+test_case/testdata*
+spark-output
+.idea
+__pycache__
+
+test-results/
+.coverage
+
+tests/testdata/creditcard.csv
